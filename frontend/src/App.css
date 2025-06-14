@@ -1,0 +1,204 @@
+/* frontend/src/App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6; /* Light grayish background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  min-height: 100vh;
+  padding-top: 40px; /* Add some padding at the top */
+}
+
+.App {
+  width: 100%;
+  max-width: 450px; /* Max width for the main app container */
+  text-align: center;
+}
+
+.App-header {
+  background-color: #ffffff; /* White header */
+  padding: 20px;
+  color: #333; /* Dark text for header */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  margin: 0 0 15px 0;
+  font-size: 2em;
+  color: #007bff; /* Blue for the main title */
+}
+
+.App-header nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff; /* Blue buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.App-header nav button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.App-header nav button.active { /* Style for the active button */
+  background-color: #0056b3;
+  font-weight: bold;
+}
+
+
+/* Form container styling */
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: calc(100% - 24px); /* Full width minus padding */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745; /* Green submit button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Message styling from previous step - ensure it's compatible or adjust */
+.message {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.95em;
+}
+.message.success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+.message.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+/* Basic responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding-top: 20px;
+  }
+  .App-header {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .App-header h1 {
+    font-size: 1.8em;
+  }
+  .App-header nav button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+  .form-container {
+    padding: 20px;
+  }
+}
+
+/* Add new styles for Dashboard content at the end or in a relevant section */
+
+/* Styling for content within the Dashboard's .form-container */
+.dashboard-content h3 {
+  margin-top: 0; /* If .form-container has padding, this might not be needed */
+  margin-bottom: 15px;
+  color: #007bff; /* Same blue as header title for consistency */
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.dashboard-content p {
+  font-size: 1.05em; /* Slightly larger paragraph text for readability */
+  line-height: 1.6;
+  margin-bottom: 10px; /* Space between paragraphs */
+}
+
+.dashboard-content p strong {
+  font-weight: 600; /* Make strong text a bit bolder if needed */
+  color: #333;
+}
+
+.dashboard-content div[role="group"] { /* Assuming we wrap sections for clarity */
+  margin-bottom: 20px; /* Space between metric groups */
+}
+
+.dashboard-content h4 {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 20px; /* Space above sub-headings like "Distribuição por Gênero" */
+  margin-bottom: 10px;
+}
+
+.dashboard-content ul {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+.dashboard-content ul li {
+  padding: 5px 0; /* Add some padding to list items */
+  font-size: 1em;
+  border-bottom: 1px dashed #eee; /* Light separator for list items */
+}
+
+.dashboard-content ul li:last-child {
+  border-bottom: none; /* No border for the last item */
+}
