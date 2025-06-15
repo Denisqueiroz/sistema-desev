@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SistemaApplication<sistema>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.decati.sistema.SistemaApplication",
+            "projectName": "sistema",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
